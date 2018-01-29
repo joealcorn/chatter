@@ -14,6 +14,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 CORS(app, origins=[
     'http://127.0.0.1:4000',
+    'https://joealcorn.co.uk',
 ])
 
 s3 = boto3.resource('s3')
