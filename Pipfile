@@ -1,0 +1,26 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[dev-packages]
+
+ipython = "*"
+ipdb = "*"
+
+
+[packages]
+
+zappa = "*"
+"boto3" = "*"
+flask = "*"
+simpleflake = "*"
+pytz = "*"
+flask-cors = "*"
+
+
+[requires]
+
+python_version = "3.6"
