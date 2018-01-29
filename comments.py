@@ -88,7 +88,7 @@ def get_comments_from_bucket(slug):
     return (comments, etags)
 
 
-def rebuild_comment_index(event, context):
+def handle_s3_object_event(event, context):
     '''
     This event handler fires when a file is added or removed from the bucket.
     It triggers a rebuild of the appropriate index file.

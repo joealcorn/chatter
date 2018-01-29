@@ -7,7 +7,7 @@
         "runtime": "python3.6",
         "s3_bucket": "zappa-comments-build",
         "events": [{
-            "function": "comments.rebuild_comment_index",
+            "function": "comments.handle_s3_object_event",
             "event_source": {
                 "arn":  "arn:aws:s3:::zappa-comments-input",
                 "events": [
