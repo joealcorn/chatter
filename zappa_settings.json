@@ -1,13 +1,13 @@
 {
     "dev": {
-        "app_function": "comments.app",
+        "app_function": "chatter.app",
         "aws_region": "eu-west-1",
         "profile_name": "default",
         "project_name": "comments",
         "runtime": "python3.6",
         "s3_bucket": "zappa-comments-build",
         "events": [{
-            "function": "comments.handle_s3_object_event",
+            "function": "chatter.handle_s3_object_event",
             "event_source": {
                 "arn":  "arn:aws:s3:::zappa-comments-input",
                 "events": [
