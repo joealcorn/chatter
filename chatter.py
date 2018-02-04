@@ -23,6 +23,9 @@ bucket = s3.Bucket('zappa-comments-input')
 
 @app.route('/', methods=['POST'])
 def submit_comment():
+    '''
+    Hit by a user's browser to add a new comment
+    '''
     # slug should be something like a url
     slug = request.form.get('slug')
     comment_text = request.form.get('comment')
